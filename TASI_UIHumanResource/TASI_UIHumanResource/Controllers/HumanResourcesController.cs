@@ -16,7 +16,7 @@ namespace TASI_UIHumanResource.Controllers
 {
     public class HumanResourcesController : Controller
     {
-        string url = "http://localhost:54859/api/humanresource";
+        string url = "http://localhost:54859/api/humanresources";
         HttpClient client;
 
         public HumanResourcesController()

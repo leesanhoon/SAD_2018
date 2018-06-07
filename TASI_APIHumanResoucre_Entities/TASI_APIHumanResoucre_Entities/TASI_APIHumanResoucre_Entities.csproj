@@ -185,7 +185,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\HumanResourceController.cs" />
+    <Compile Include="Controllers\HumanResourcesController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -196,8 +196,6 @@
       <DependentUpon>HumanResource.Context.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\HumanResource.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>HumanResource.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\HumanResource.Designer.cs">
@@ -205,7 +203,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HumanResource.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\USER.cs">
+    <Compile Include="Models\HumanResource1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
       <DependentUpon>HumanResource.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -219,13 +219,13 @@
     <Content Include="Global.asax" />
     <Content Include="Models\HumanResource.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>HumanResource.Context.cs</LastGenOutput>
       <DependentUpon>HumanResource.edmx</DependentUpon>
+      <LastGenOutput>HumanResource.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\HumanResource.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>HumanResource.edmx</DependentUpon>
-      <LastGenOutput>HumanResource.cs</LastGenOutput>
+      <LastGenOutput>HumanResource1.cs</LastGenOutput>
     </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

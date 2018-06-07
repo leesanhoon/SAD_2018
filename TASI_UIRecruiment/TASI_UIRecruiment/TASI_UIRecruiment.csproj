@@ -220,11 +220,13 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\RecruimentNhibernatesController.cs" />
     <Compile Include="Controllers\RecruimentsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Recruiment.cs" />
+    <Compile Include="Models\RecruimentNhibernate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -264,6 +266,8 @@
     <Content Include="Views\Recruiments\Create.cshtml" />
     <Content Include="Views\Recruiments\Edit.cshtml" />
     <Content Include="Views\Recruiments\Index.cshtml" />
+    <Content Include="Views\RecruimentNhibernates\Create.cshtml" />
+    <Content Include="Views\RecruimentNhibernates\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
