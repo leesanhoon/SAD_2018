@@ -41,12 +41,14 @@ namespace TASI_UIRecruiment.Controllers
                 {
                     NullValueHandling = NullValueHandling.Ignore
                 };
-                List<Recruiment> Employees = JsonConvert.DeserializeObject<List<Recruiment>>(responseData, settings);
-                return View(Employees);
+                List<Recruiment> recruiment = JsonConvert.DeserializeObject<List<Recruiment>>(responseData, settings);
+                return View(recruiment);
 
             }
             return View("Error");
         }
+
+        
 
 
 

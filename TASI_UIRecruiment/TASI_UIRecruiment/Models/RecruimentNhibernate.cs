@@ -8,7 +8,7 @@ namespace TASI_UIRecruiment.Models
 {
     public class RecruimentNhibernate
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string Fullname { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
